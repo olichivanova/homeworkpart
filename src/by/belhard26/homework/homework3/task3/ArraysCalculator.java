@@ -6,7 +6,8 @@ public class ArraysCalculator {
         for ( int i = 0; i < sumArrays.length; i++) {
             if (i > array1.length - 1)
                 sumArrays [i] = array2[i];
-            
+           else if (i > array2.length - 1)
+                sumArrays [i] = array1 [i] ;
             else
             sumArrays [i] = array1[i] + array2[i];   
         }
